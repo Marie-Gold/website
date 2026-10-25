@@ -9,7 +9,7 @@ export const socials = {
   substack: "https://hyperactivebaddie.substack.com",
   x: "https://x.com/chloepilonv",
   linkedin: "https://www.linkedin.com/in/chloe-pilonvaillancourt/",
-  github: "https://github.com/chloepilonv",
+  github: "https://github.com/marie-gold",
 };
 
 export const albums = [
