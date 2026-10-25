@@ -14,6 +14,13 @@ export const socials = {
 
 export const albums = [
   {
+    title: "banale baddie",
+    type: "Single",
+    year: "2026",
+    cover: "/images/albums/banale-baddie.jpg",
+    href: "https://ffm.to/banalebaddie",
+  },
+  {
     title: "C'est qui la boss ? (Radio Edit)",
     type: "Single",
     year: "2024",
@@ -139,6 +146,7 @@ export const pastShows: { date: string; venue: string; link?: string }[] = [
 
 
 export const videos = [
+  { title: "banale baddie (visualizer)", youtubeId: "ktA9ehAwEzU" },
   { title: "C'est qui le boss ?", youtubeId: "apBew8KKlxQ" },
   { title: "Bye-Bye BB feat. Jamaz", youtubeId: "ErSBkvzKtSs" },
   { title: "Goélands feat. Kirouac et Lydia Képinski", youtubeId: "Zme2E2JZ98I" },
