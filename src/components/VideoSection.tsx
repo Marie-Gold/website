@@ -48,23 +48,6 @@ export function VideoSection() {
         </h2>
       </Reveal>
 
-      {/* Court-métrage / short film - featured */}
-      <GroupHeading>{dict.video.shortFilm}</GroupHeading>
-      <div className="grid sm:grid-cols-2 gap-6 items-center mb-20">
-        {shortFilms.map((f) => (
-          <Reveal key={f.youtubeId}>
-            <button
-              onClick={() => setActive(f.youtubeId)}
-              className="group block w-full text-left sm:col-span-1"
-            >
-              {thumb(f.youtubeId, f.title)}
-              <p className="mt-3 font-display text-xl sm:text-2xl tracking-tight">{f.title}</p>
-              <p className="text-xs text-ink/50 mt-1">{f.subtitle}</p>
-            </button>
-          </Reveal>
-        ))}
-      </div>
-
       {/* Vidéoclips */}
       <GroupHeading>{dict.video.videoclips}</GroupHeading>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 mb-20">
@@ -83,7 +66,7 @@ export function VideoSection() {
 
       {/* Rap battles */}
       <GroupHeading>{dict.video.rapBattles}</GroupHeading>
-      <div className="grid sm:grid-cols-2 gap-5 sm:gap-8">
+      <div className="grid sm:grid-cols-2 gap-5 sm:gap-8 mb-20">
         {rapBattles.map((v, i) => (
           <Reveal key={v.youtubeId} delay={i * 0.05}>
             <button
@@ -92,6 +75,23 @@ export function VideoSection() {
             >
               {thumb(v.youtubeId, v.title)}
               <p className="mt-2 text-sm">{v.title}</p>
+            </button>
+          </Reveal>
+        ))}
+      </div>
+
+      {/* Court-métrage / short film - featured */}
+      <GroupHeading>{dict.video.shortFilm}</GroupHeading>
+      <div className="grid sm:grid-cols-2 gap-6 items-center">
+        {shortFilms.map((f) => (
+          <Reveal key={f.youtubeId}>
+            <button
+              onClick={() => setActive(f.youtubeId)}
+              className="group block w-full text-left sm:col-span-1"
+            >
+              {thumb(f.youtubeId, f.title)}
+              <p className="mt-3 font-display text-xl sm:text-2xl tracking-tight">{f.title}</p>
+              <p className="text-xs text-ink/50 mt-1">{f.subtitle}</p>
             </button>
           </Reveal>
         ))}
