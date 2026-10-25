@@ -39,7 +39,7 @@ export const t = {
     },
     video: {
       label: "vidéo",
-      heading: "vidéoclips, court-métrage & rap battles",
+      heading: "vidéoclips, rap battles & court-métrage",
       videoclips: "vidéoclips",
       shortFilm: "court-métrage",
       rapBattles: "rap battles",
@@ -112,7 +112,7 @@ export const t = {
     },
     video: {
       label: "video",
-      heading: "music videos, short film & rap battles",
+      heading: "music videos, rap battles & short film",
       videoclips: "music videos",
       shortFilm: "short film",
       rapBattles: "rap battles",
